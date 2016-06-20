@@ -1,0 +1,17 @@
+RewriteEngine On
+
+RewriteRule ^detail-?(\d*)\.html$ detail.php?id=$1 [L]
+RewriteRule ^([a-zA-Z0-9-_]{1,})\.html$ $1.php [L]
+
+RewriteEngine On
+
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteRule ^$ index.php?a=index&m=index&%1 [L]
+RewriteEngine On
+
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteRule ^([0-9a-zA-Z]*)$ index.php?a=$1&m=index&%1 [L]
+RewriteEngine On
+
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteRule ^([0-9a-zA-Z]*)/([0-9a-zA-Z]*)$ index.php?a=$1&m=$2&%1 [L]
