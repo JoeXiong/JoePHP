@@ -88,9 +88,9 @@ class init
         require_once _INCLUDES_DIR_ . 'publicfunc.class.php';
         require_once _INCLUDES_DIR_ . 'encrypt.class.php';
         require_once _INCLUDES_DIR_ . 'page.class.php';
-        require_once _INCLUDES_DIR_ . 'readtabletofun.class.php';
         //引入是smarty模版
         require_once _VENDORS_DIR_ . 'smarty/Smarty.class.php';
+        
     }
 
     /**
@@ -136,9 +136,7 @@ class init
             require_once _DMODEL_DIR_ . "joe/" . rtrim($class_name, 'Dmodel') . '.dm.class.php';
         } elseif (substr($class_name, - 2) == 'Do') {
             require_once _ACTION_DIR_ . rtrim($class_name, 'Do') . '.a.class.php';
-        } elseif (substr($class_name, - 5) == 'Model'){
-            require_once _MODEL_DIR_ . rtrim($class_name, 'Model') . '.m.class.php';
-        }
+        } 
     }
 
     /**
