@@ -1,726 +1,1830 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Home</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords"
-	content="Classic Style Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript">
-	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } 
-</script>
-<!-- //for-mobile-apps -->
-<link href="<{$siteurl.joe.url}>/ui/defult/css/bootstrap.css" rel="stylesheet" type="text/css"
-	media="all" />
-<link href="<{$siteurl.joe.url}>/ui/defult/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- js -->
-<script src="<{$siteurl.joe.url}>/ui/defult/js/jquery.min.js"></script>
-<!-- //js -->
-<!-- cart -->
-<script src="<{$siteurl.joe.url}>/ui/defult/js/simpleCart.min.js"></script>
-<!-- cart -->
-<!-- for bootstrap working -->
-<script type="text/javascript" src="<{$siteurl.joe.url}>/ui/defult/js/bootstrap-3.1.1.min.js"></script>
-<!-- //for bootstrap working -->
-<!-- animation-effect -->
-<link href="<{$siteurl.joe.url}>/ui/defult/css/animate.min.css" rel="stylesheet">
-<script src="<{$siteurl.joe.url}>/ui/defult/js/wow.min.js"></script>
-<script>
-	new WOW().init();
-</script>
-<!-- //animation-effect -->
-<link href='http://fonts.useso.com/css?family=Cabin:400,500,600,700'
-	rel='stylesheet' type='text/css'>
-<link href='http://fonts.useso.com/css?family=Lato:400,100,300,700,900'
-	rel='stylesheet' type='text/css'>
-</head>
+<{include file="new/index_header.html"}>
+<{include file="new/index_ads.html"}>
 
-<body>
-	<!-- header -->
-	<div class="header">
-		<div class="header-grid">
-			<div class="container">
-				<div class="header-left animated wow fadeInLeft"
-					data-wow-delay=".5s">
-					<ul>
-						<li><i class="glyphicon glyphicon-headphones"></i><a href="#">24x7
-								live support</a></li>
-						<li><i class="glyphicon glyphicon-envelope"></i><a
-							href="mailto:info@example.com">@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone"></i>+1234 567
-							892</li>
+<div class="toolBarBox">
+	<div class="toolBar">
+		<p class="weltext l mt6">
+			<a href="#" class="bg_savezm l">保存到桌面</a><span>欢迎来到网批网！&nbsp;<a
+				href="#">免费注册</a>&nbsp;&nbsp;<a>登录</a></span>
+		</p>
 
-					</ul>
-				</div>
-				<div class="header-right animated wow fadeInRight"
-					data-wow-delay=".5s">
-					<div class="header-right1 ">
-						<ul>
-
-							<li><i class="glyphicon glyphicon-log-in"></i><a
-								href="login.html">Login</a></li>
-							<li><i class="glyphicon glyphicon-book"></i><a
-								href="register.html">Register</a></li>
-						</ul>
-					</div>
-					<div class="header-right2">
-						<div class="cart box_1">
-							<a href="checkout.html">
-								<h3>
-									<div class="total">
-										<span class="simpleCart_total"></span> (<span
-											id="simpleCart_quantity" class="simpleCart_quantity"></span>
-										items)
-									</div>
-									<img src="images/cart.png" alt="" />
-								</h3>
-							</a>
-							<p>
-								<a href="javascript:;" class="simpleCart_empty">Empty Cart</a>
-							</p>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="clearfix"></div>
+		<!--用户登录后的状态-->
+		<div class="weltext l hidden">
+			<a href="#" class="bg_savezm l mt6">保存到桌面</a> <span class="mt6">您好!</span>
+			<div class="w_namebox l">
+				<p class="w_regierbox">
+					[<a href="#" class="w_name c">lixianming@163.com</a>]
+				</p>
 			</div>
+			<span class="mt6">欢迎来到网批网!</span><span class="mt6">[<a
+				href="#">退出</a>]
+			</span>
 		</div>
-		<div class="container">
-			<div class="logo-nav">
-
-				<nav class="navbar navbar-default">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header nav_2">
-						<button type="button"
-							class="navbar-toggle collapsed navbar-toggle1"
-							data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-							<span class="sr-only">Toggle navigation</span> <span
-								class="icon-bar"></span> <span class="icon-bar"></span> <span
-								class="icon-bar"></span>
-						</button>
-						<div class="navbar-brand logo-nav-left ">
-							<h1 class="animated wow pulse" data-wow-delay=".5s">
-								<a href="index.html">Classic<span>Style</span></a>
-							</h1>
-						</div>
-
-					</div>
-					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="index.html" class="act">Home</a></li>
-							<!-- Mega Menu -->
-							<li class="dropdown"><a href="#" class="dropdown-toggle"
-								data-toggle="dropdown">Women <b class="caret"></b></a>
-								<ul class="dropdown-menu multi">
-									<div class="row">
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<h6>Submenu1</h6>
-
-												<li><a href="products.html">Accessories</a></li>
-												<li><a href="products.html">Bags</a></li>
-												<li><a href="products.html">Caps & Hats</a></li>
-												<li><a href="products.html">Hoodies & Sweatshirts</a></li>
-
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<h6>Submenu2</h6>
-												<li><a href="products.html">Jackets & Coats</a></li>
-												<li><a href="products.html">Jeans</a></li>
-												<li><a href="products.html">Jewellery</a></li>
-												<li><a href="products.html">Jumpers & Cardigans</a></li>
-												<li><a href="products.html">Leather Jackets</a></li>
-												<li><a href="products.html">Long Sleeve T-Shirts</a></li>
-
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<h6>Submenu3</h6>
-												<li><a href="products.html">Shirts</a></li>
-												<li><a href="products.html">Shoes, Boots & Trainers</a></li>
-												<li><a href="products.html">Sunglasses</a></li>
-												<li><a href="products.html">Sweatpants</a></li>
-												<li><a href="products.html">Swimwear</a></li>
-												<li><a href="products.html">Trousers & Chinos</a></li>
-
-											</ul>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="row-top">
-										<div class="col-sm-6 row1">
-											<a href="products.html"><img src="images/me.jpg" alt=""
-												class="img-responsive"></a>
-										</div>
-										<div class=" col-sm-6 row2">
-											<a href="products.html"><img src="images/me1.jpg" alt=""
-												class="img-responsive"></a>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</ul></li>
-							<li class="dropdown"><a href="#" class="dropdown-toggle"
-								data-toggle="dropdown">Men <b class="caret"></b></a>
-								<ul class="dropdown-menu multi multi1">
-									<div class="row">
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<h6>Submenu1</h6>
-
-												<li><a href="products1.html">Accessories</a></li>
-												<li><a href="products1.html">Bags</a></li>
-												<li><a href="products1.html">Caps & Hats</a></li>
-												<li><a href="products1.html">Hoodies & Sweatshirts</a></li>
-
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<h6>Submenu2</h6>
-												<li><a href="products1.html">Jackets & Coats</a></li>
-												<li><a href="products1.html">Jeans</a></li>
-												<li><a href="products1.html">Jewellery</a></li>
-												<li><a href="products1.html">Jumpers & Cardigans</a></li>
-												<li><a href="products1.html">Leather Jackets</a></li>
-												<li><a href="products1.html">Long Sleeve T-Shirts</a></li>
-
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<h6>Submenu3</h6>
-												<li><a href="products1.html">Shirts</a></li>
-												<li><a href="products1.html">Shoes, Boots &
-														Trainers</a></li>
-												<li><a href="products1.html">Sunglasses</a></li>
-												<li><a href="products1.html">Sweatpants</a></li>
-												<li><a href="products1.html">Swimwear</a></li>
-												<li><a href="products1.html">Trousers & Chinos</a></li>
-
-											</ul>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="row-top">
-										<div class="col-sm-6 row1">
-											<a href="products1.html"><img src="images/me2.jpg" alt=""
-												class="img-responsive"></a>
-										</div>
-										<div class=" col-sm-6 row2">
-											<a href="products1.html"><img src="images/me3.jpg" alt=""
-												class="img-responsive"></a>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</ul></li>
-
-							<li><a href="codes.html"> Codes</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-
-		</div>
-	</div>
-	<!-- //header -->
-
-
-	<!-- banner -->
-	<div class="banner">
-
-
-		<div class="banner-right">
-			<ul id="flexiselDemo2">
-				<li><div class="banner-grid">
-						<h2>Featured Products</h2>
-						<div class="wome">
-							<a href="single.html"><img class="img-responsive"
-								src="images/bi1.jpg" alt="" /> </a>
-							<div class="women simpleCart_shelfItem">
-								<a href="#"><img src="images/ll.png" alt=""></a>
-								<h6>
-									<a href="single.html">Sed ut perspiciatis unde</a>
-								</h6>
-								<p class="ba-price">
-									<del>$100.00</del>
-									<em class="item_price">$70.00</em>
-								</p>
-								<a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add
-									To Cart</a>
-							</div>
-						</div>
-					</div></li>
-				<li><div class="banner-grid">
-						<h2>Featured Products</h2>
-						<div class="wome">
-							<a href="single.html"><img class="img-responsive"
-								src="images/bi.jpg" alt="" /> </a>
-							<div class="women simpleCart_shelfItem">
-								<a href="#"><img src="images/ll.png" alt=""></a>
-								<h6>
-									<a href="single.html">Sed ut perspiciatis unde</a>
-								</h6>
-								<p class="ba-price">
-									<del>$100.00</del>
-									<em class="item_price">$70.00</em>
-								</p>
-								<a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add
-									To Cart</a>
-							</div>
-						</div>
-					</div></li>
-				<li><div class="banner-grid">
-						<h2>Featured Products</h2>
-						<div class="wome">
-							<a href="single.html"><img class="img-responsive"
-								src="images/bi2.jpg" alt="" /> </a>
-							<div class="women simpleCart_shelfItem">
-								<a href="#"><img src="images/ll.png" alt=""></a>
-								<h6>
-									<a href="single.html">Sed ut perspiciatis unde</a>
-								</h6>
-								<p class="ba-price">
-									<del>$100.00</del>
-									<em class="item_price">$70.00</em>
-								</p>
-								<a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add
-									To Cart</a>
-							</div>
-						</div>
-					</div></li>
-
-
+		<div id="site-nav">
+			<ul class="quick-menu">
+				<li><a href="#">登录商城</a></li>
+				<li><p class="tshopcart">
+						<a href="#">购物车</a>
+					</p></li>
+				<li class="last"><a href="#">帮助中心</a></li>
 			</ul>
-			<script type="text/javascript">
-				$(window).load(function() {
-					$("#flexiselDemo2").flexisel({
-						visibleItems : 1,
-						animationSpeed : 1000,
-						autoPlay : true,
-						autoPlaySpeed : 5000,
-						pauseOnHover : true,
-						enableResponsiveBreakpoints : true,
-						responsiveBreakpoints : {
-							portrait : {
-								changePoint : 480,
-								visibleItems : 1
-							},
-							landscape : {
-								changePoint : 640,
-								visibleItems : 1
-							},
-							tablet : {
-								changePoint : 768,
-								visibleItems : 1
-							}
-						}
-					});
-
-				});
-			</script>
-			<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-
-		</div>
-
-
-	</div>
-
-	</div>
-	<!-- //banner -->
-	<!--content-->
-	<div class="content">
-		<div class="content-head">
-
-			<div class="col-md-6 col-m1 animated wow fadeInLeft"
-				data-wow-delay=".1s">
-				<div class="col-1">
-					<div class="col-md-6 col-2">
-						<a href="single.html"><img src="images/pi3.jpg"
-							class="img-responsive" alt=""> </a>
-					</div>
-					<div class="col-md-6 col-p">
-						<h5>For All Collections</h5>
-						<p>At vero eos et accusamus et iusto odio dignissimos ducimus
-							qui blanditiis praesentium voluptatum deleniti atque</p>
-						<a href="single.html" class="shop" data-hover="Shop Now">Shop
-							Now</a>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="col-1">
-					<div class="col-md-6 col-p">
-						<h5>For All Collections</h5>
-						<p>At vero eos et accusamus et iusto odio dignissimos ducimus
-							qui blanditiis praesentium voluptatum deleniti atque</p>
-						<a href="single.html" class="shop" data-hover="Shop Now">Shop
-							Now</a>
-					</div>
-					<div class="col-md-6 col-2">
-						<a href="single.html"><img src="images/pi.jpg"
-							class="img-responsive" alt=""> </a>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-
-			<div class="col-md-6 col-m2 animated wow fadeInRight"
-				data-wow-delay=".1s">
-
-				<!---->
-				<!-- requried-jsfiles-for owl -->
-				<link href="css/owl.carousel.css" rel="stylesheet">
-				<script src="js/owl.carousel.js"></script>
-				<script>
-					$(document).ready(function() {
-						$("#owl-demo").owlCarousel({
-							items : 2,
-							lazyLoad : false,
-							autoPlay : true,
-							navigation : true,
-							navigationText : true,
-							pagination : false,
-						});
-					});
-				</script>
-				<!-- //requried-jsfiles-for owl -->
-				<!-- start content_slider -->
-				<div id="owl-demo" class="owl-carousel">
-					<div class="item">
-
-						<a href="single.html"><img class="img-responsive"
-							src="images/bb.png" alt="" /></a> <a href="single.html"
-							class="shop-2">Shop Now</a>
-
-					</div>
-					<div class="item">
-
-						<a href="single.html"><img class="img-responsive"
-							src="images/bb1.png" alt="" /></a> <a href="single.html"
-							class="shop-2">Shop Now</a>
-
-					</div>
-
-					<div class="item">
-
-						<a href="single.html"><img class="img-responsive"
-							src="images/bb.png" alt="" /> </a> <a href="single.html"
-							class="shop-2">Shop Now</a>
-
-					</div>
-					<div class="item">
-
-						<a href="single.html"><img class="img-responsive"
-							src="images/bb1.png" alt="" /></a> <a href="single.html"
-							class="shop-2">Shop Now</a>
-
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
 		</div>
 	</div>
-
-	<!---->
-
-	<div class="content-top">
-		<div class="col-md-5 col-md1 animated wow fadeInLeft"
-			data-wow-delay=".1s">
-			<div class="col-3">
-				<a href="single.html"><img src="images/pi1.jpg"
-					class="img-responsive " alt="">
-					<div class="col-pic">
-						<h5>Women's Wear</h5>
-						<p>At vero eos et accusamus et</p>
-					</div></a>
-			</div>
-
+</div>
+<p class="clear"></p>
+<!-- toolBarBox end -->
+<div class="lgbar-box">
+	<div class="lgbarbox">
+		<a href="#" class="smlogo l"><img
+			src="ui/default/images/smlogo2.png" /></a>
+		<div class="lgtitle0 l">
+			<p>
+				<a href="#"><img src="ui/default/images/logotem.png" /></a>
+			</p>
 		</div>
-		<div class="col-md-7 col-md2 animated wow fadeInRight"
-			data-wow-delay=".1s">
-			<div class="col-sm-4 item-grid simpleCart_shelfItem">
-				<div class="grid-pro">
-					<div class=" grid-product ">
-						<figure>
-							<a href="single.html">
-								<div class="grid-img">
-									<img src="images/pr1.jpg" class="img-responsive" alt="">
-								</div>
-								<div class="grid-img">
-									<img src="images/pr.jpg" class="img-responsive" alt="">
-								</div>
-							</a>
-						</figure>
-					</div>
-					<div class="women">
-						<a href="#"><img src="images/ll.png" alt=""></a>
-						<h6>
-							<a href="single.html">Sed ut perspiciatis unde</a>
-						</h6>
-						<p>
-							<del>$100.00</del>
-							<em class="item_price">$70.00</em>
-						</p>
-						<a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add
-							To Cart</a>
-					</div>
-				</div>
-			</div>
 
-			<div class="col-sm-4 item-grid simpleCart_shelfItem">
-				<div class="grid-pro">
-					<div class=" grid-product ">
-						<figure>
-							<a href="single.html">
-								<div class="grid-img">
-									<img src="images/pr3.jpg" class="img-responsive" alt="">
-								</div>
-								<div class="grid-img">
-									<img src="images/pr2.jpg" class="img-responsive" alt="">
-								</div>
-							</a>
-						</figure>
-					</div>
-					<div class="women">
-						<a href="#"><img src="images/ll.png" alt=""></a>
-						<h6>
-							<a href="single.html">Sed ut perspiciatis unde</a>
-						</h6>
-						<p>
-							<del>$100.00</del>
-							<em class="item_price">$70.00</em>
-						</p>
-						<a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add
-							To Cart</a>
-					</div>
-				</div>
+		<span class="img71 r" id="img71popu"> <a href="#"
+			class="popupimga"><img src="ui/default/images/er2.png"
+				class="popupimg" /></a> <span class="erpopup f14 ffa"> <img
+				src="ui/default/images/img120120.png" /> 扫一扫,下载手机版
+		</span>
+		</span> <span class="bg_tptype r"></span>
+		<div class="mssearchBox r ffa">
+
+			<p class="searchtext l">
+				<input type="text" class="inp_nsearch" value="春装" pla />
+				<!--输入状态样式用 inp_nsearchcur-->
+			</p>
+			<input type="button" class="btn_nsearch r ffa" value="搜 索">
+				<p class="clear"></p>
+			<div class="search-popupmenu" style="display: none">
+				<ul>
+					<li><a href="###">春装<b>新款</b></a></li>
+					<li><a href="###">春装<b>男士</b></a></li>
+					<li><a href="###">春装新款女装</a></li>
+					<li><a href="###">春装外套女</a></li>
+					<li><a href="###">春装新款女装2016套装</a></li>
+					<li><a href="###">春装新款女装</a></li>
+					<li><a href="###">春装童装</a></li>
+					<li><a href="###">春装新款女装</a></li>
+					<li><a href="###">春装新款女装</a></li>
+					<li><a href="###">春装新款女装</a></li>
+				</ul>
 			</div>
-			<div class="col-sm-4 item-grid simpleCart_shelfItem">
-				<div class="grid-pro">
-					<div class=" grid-product ">
-						<figure>
-							<a href="single.html">
-								<div class="grid-img">
-									<img src="images/pr5.jpg" class="img-responsive" alt="">
-								</div>
-								<div class="grid-img">
-									<img src="images/pr4.jpg" class="img-responsive" alt="">
-								</div>
-							</a>
-						</figure>
-					</div>
-					<div class="women">
-						<a href="#"><img src="images/ll.png" alt=""></a>
-						<h6>
-							<a href="single.html">Sed ut perspiciatis unde</a>
-						</h6>
-						<p>
-							<del>$100.00</del>
-							<em class="item_price">$70.00</em>
-						</p>
-						<a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add
-							To Cart</a>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
 		</div>
-		<div class="clearfix"></div>
+		<p class="clear"></p>
 	</div>
-	<!----->
-	<!---->
-	<div class="content-top">
-
-		<div class="col-md-7 col-md2 animated wow fadeInLeft"
-			data-wow-delay=".1s">
-			<div class="col-sm-4 item-grid simpleCart_shelfItem">
-				<div class="grid-pro">
-					<div class=" grid-product ">
-						<figure>
-							<a href="single.html">
-								<div class="grid-img">
-									<img src="images/pr6.jpg" class="img-responsive" alt="">
-								</div>
-								<div class="grid-img">
-									<img src="images/pr7.jpg" class="img-responsive" alt="">
-								</div>
-							</a>
-						</figure>
-					</div>
-					<div class="women">
-						<a href="#"><img src="images/ll.png" alt=""></a>
-						<h6>
-							<a href="single.html">Sed ut perspiciatis unde</a>
-						</h6>
-						<p>
-							<del>$100.00</del>
-							<em class="item_price">$70.00</em>
-						</p>
-						<a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add
-							To Cart</a>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="col-sm-4 item-grid simpleCart_shelfItem">
-				<div class="grid-pro">
-					<div class=" grid-product ">
-						<figure>
-							<a href="single.html">
-								<div class="grid-img">
-									<img src="images/pr9.jpg" class="img-responsive" alt="">
-								</div>
-								<div class="grid-img">
-									<img src="images/pr8.jpg" class="img-responsive" alt="">
-								</div>
-							</a>
-						</figure>
-					</div>
-					<div class="women">
-						<a href="#"><img src="images/ll.png" alt=""></a>
-						<h6>
-							<a href="single.html">Sed ut perspiciatis unde</a>
-						</h6>
-						<p>
-							<del>$100.00</del>
-							<em class="item_price">$70.00</em>
-						</p>
-						<a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add
-							To Cart</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4 item-grid simpleCart_shelfItem">
-				<div class="grid-pro">
-					<div class=" grid-product ">
-						<figure>
-							<a href="single.html">
-								<div class="grid-img">
-									<img src="images/pr10.jpg" class="img-responsive" alt="">
-								</div>
-								<div class="grid-img">
-									<img src="images/pr11.jpg" class="img-responsive" alt="">
-								</div>
-							</a>
-						</figure>
-					</div>
-					<div class="women">
-						<a href="#"><img src="images/ll.png" alt=""></a>
-						<h6>
-							<a href="single.html">Sed ut perspiciatis unde</a>
-						</h6>
-						<p>
-							<del>$100.00</del>
-							<em class="item_price">$70.00</em>
-						</p>
-						<a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add
-							To Cart</a>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<div class="col-md-5 col-md1 animated wow fadeInRight"
-			data-wow-delay=".1s">
-			<div class="col-3">
-				<a href="single.html"><img src="images/pi2.jpg"
-					class="img-responsive " alt="">
-					<div class="col-pic">
-						<h5>Men's Wear</h5>
-						<p>At vero eos et accusamus et</p>
-					</div></a>
-			</div>
-
-		</div>
-		<div class="clearfix"></div>
-	</div>
-
-
-	<!--products-->
-	<div class="social animated wow fadeInDown" data-wow-delay=".1s">
-		<div class="container">
-			<div class="col-sm-3 social-ic">
-				<a href="#">FACEBOOK</a>
-			</div>
-			<div class="col-sm-3 social-ic">
-				<a href="#">TWITTER</a>
-			</div>
-			<div class="col-sm-3 social-ic">
-				<a href="#">GOOGLE+</a>
-			</div>
-			<div class="col-sm-3 social-ic">
-				<a href="#">PINTEREST</a>
-			</div>
-			<div class="clearfix"></div>
+</div>
+<!-- lgbarbox end -->
+<div class="navbar">
+	<div class="navboxnew fc">
+		<div class="cateboxnew l ffa f14">所有商品分类</div>
+		<div class="navtitlenew l">
+			<ul class="fc">
+				<li><a href="#">天天特价</a></li>
+				<li><a href="#" class="onhover">惠团购</a></li>
+			</ul>
 		</div>
 	</div>
+	<div class="navbg"></div>
+</div>
+<!-- navbox end -->
 
-	<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="footer-top">
-				<div class="col-md-9 footer-top1">
-					<h4>Duis aute irure dolor in reprehenderit in voluptate</h4>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit
-						esse.Excepteur sint occaecat cupidatat non proident Duis aute
-						irure dolor in reprehenderit in voluptate velit esse</p>
-				</div>
-				<div class="col-md-3 footer-top2">
-					<a href="contact.html">Contact Us</a>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="footer-grids">
-				<div class="col-md-4 footer-grid animated wow fadeInLeft"
-					data-wow-delay=".5s">
-					<h3>About Us</h3>
-					<p>
-						Duis aute irure dolor in reprehenderit in voluptate velit esse.<span>Excepteur
-							sint occaecat cupidatat non proident, sunt in culpa qui officia
-							deserunt mollit.</span>
-					</p>
-				</div>
-				<div class="col-md-4 footer-grid animated wow fadeInLeft"
-					data-wow-delay=".6s">
-					<h3>Contact Info</h3>
+<div class="fp-category-menu">
+
+	<div class="fp-module-box">
+		<div class="fp-module">
+			<div class="fp-catelistbox l">
+				<ul class="fp-catelists">
+					<li class="icon1">
+						<p class="first-cate">
+							<a href="#">服装内衣</a>
+						</p>
+						<p class="second-cate">
+							<span><a href="#">品味男装</a></span> <span><a href="#">户外运动</a></span>
+						</p>
+					</li>
+					<li class="icon2">
+						<p class="first-cate">
+							<a href="#">鞋帽箱包</a>
+						</p>
+						<p class="second-cate">
+							<span><a href="#">台式机</a></span> <span><a href="#">笔记电脑</a></span>
+						</p>
+					</li>
+					<li class="icon3">
+						<p class="first-cate">
+							<a href="#">护肤美妆</a>
+						</p>
+						<p class="second-cate">
+							<span><a href="#">女装</a></span> <span><a href="#">男装</a></span>
+						</p>
+					</li>
+					<li class="icon4">
+						<p class="first-cate">
+							<a href="#">美食特产</a>
+						</p>
+						<p class="second-cate">
+							<span><a href="#">时尚男鞋</a></span> <span><a href="#">皮具箱包</a></span>
+						</p>
+					</li>
+					<li class="icon5">
+						<p class="first-cate">
+							<a href="#">珠宝饰品</a>
+						</p>
+						<p class="second-cate">
+							<span><a href="#">品味男装</a></span> <span><a href="#">户外运动</a></span>
+						</p>
+					</li>
+					<li class="icon6">
+						<p class="first-cate">
+							<a href="#">家纺家饰</a>
+						</p>
+						<p class="second-cate">
+							<span><a href="#">女装</a></span> <span><a href="#">男装</a></span>
+						</p>
+					</li>
+					<li class="icon7">
+						<p class="first-cate">
+							<a href="#">日用百货</a>
+						</p>
+						<p class="second-cate">
+							<span><a href="#">时尚男鞋</a></span> <span><a href="#">户外运动</a></span>
+						</p>
+					</li>
+					<li class="icon8">
+						<p class="first-cate">
+							<a href="#">手机数码</a>
+						</p>
+						<p class="second-cate">
+							<span><a href="#">皮具箱包</a></span> <span><a href="#">台式机</a></span>
+						</p>
+					</li>
+					<li class="icon9">
+						<p class="first-cate">
+							<a href="#">家用电器</a>
+						</p>
+						<p class="second-cate">
+							<span><a href="#">品味男装</a></span> <span><a href="#">户外运动</a></span>
+						</p>
+					</li>
+					<li class="icon10">
+						<p class="first-cate">
+							<a href="#">电脑办公</a>
+						</p>
+						<p class="second-cate">
+							<span><a href="#">笔记电脑</a></span> <span><a href="#">男装</a></span>
+						</p>
+					</li>
+				</ul>
+				<div class="ptcatebox fc" style="display: none;">
 					<ul>
-						<li><i class="glyphicon glyphicon-map-marker"></i>1234k
-							Avenue, 4th block, <span>New York City.</span></li>
-						<li class="foot-mid"><i class="glyphicon glyphicon-envelope"></i><a
-							href="mailto:info@example.com">info@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone"></i>+1234 567
-							567</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">服装内衣</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
 					</ul>
-				</div>
-				<div class="col-md-4 footer-grid animated wow fadeInLeft"
-					data-wow-delay=".7s">
-					<h3>Sign up for newsletter</h3>
-					<form>
-						<input type="text" placeholder="Email" required=""> <input
-							type="submit" value="Submit">
-					</form>
+					<p class="closebox">
+						<a href="javascript:void(0)"></a>
+					</p>
 
 				</div>
+				<div class="ptcatebox fc" style="display: none;">
+					<ul>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">鞋帽箱包</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+					</ul>
+					<p class="closebox">
+						<a href="javascript:void(0)"></a>
+					</p>
 
-				<div class="clearfix"></div>
+				</div>
+				<div class="ptcatebox fc" style="display: none;">
+					<ul>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">护肤美妆</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+					</ul>
+					<p class="closebox">
+						<a href="javascript:void(0)"></a>
+					</p>
+
+				</div>
+				<div class="ptcatebox fc" style="display: none;">
+					<ul>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">美食特产</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+					</ul>
+					<p class="closebox">
+						<a href="javascript:void(0)"></a>
+					</p>
+
+				</div>
+				<div class="ptcatebox fc" style="display: none;">
+					<ul>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">珠宝饰品</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+					</ul>
+					<p class="closebox">
+						<a href="javascript:void(0)"></a>
+					</p>
+
+				</div>
+				<div class="ptcatebox fc" style="display: none;">
+					<ul>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">家纺家饰</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+					</ul>
+					<p class="closebox">
+						<a href="javascript:void(0)"></a>
+					</p>
+
+				</div>
+				<div class="ptcatebox fc" style="display: none;">
+					<ul>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">日用百货</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+					</ul>
+					<p class="closebox">
+						<a href="javascript:void(0)"></a>
+					</p>
+
+				</div>
+				<div class="ptcatebox fc" style="display: none;">
+					<ul>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">手机数码</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+					</ul>
+					<p class="closebox">
+						<a href="javascript:void(0)"></a>
+					</p>
+
+				</div>
+				<div class="ptcatebox fc" style="display: none;">
+					<ul>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">家用电器</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+					</ul>
+					<p class="closebox">
+						<a href="javascript:void(0)"></a>
+					</p>
+
+				</div>
+				<div class="ptcatebox fc" style="display: none;">
+					<ul>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">电脑办公</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+						<li>
+							<p class="pctitle tal fb">
+								<a href="#">品味男装</a>
+							</p>
+							<p class="pctname">
+								<a href="#">T恤</a><a href="#">连衣裙</a><a href="#">雪纺衫</a><a
+									href="#">衬衫</a><a href="#">小西装</a><a href="#">牛仔裤</a><a
+									href="#">短裤 </a><a href="#">小吊带</a><a href="#">运动裤</a><a
+									href="#">卫裤</a><a href="#">短裤</a><a href="#">休闲裤</a><a href="#">短裙</a><a
+									href="#">打底衫</a><a href="#"> 羊毛衫</a><a href="#">风衣</a><a
+									href="#">真皮皮衣</a><a href="#">针织衫</a><a href="#">羽绒服</a><a
+									href="#">棉衣</a>
+							</p>
+						</li>
+					</ul>
+					<p class="closebox">
+						<a href="javascript:void(0)"></a>
+					</p>
+
+				</div>
 			</div>
-
-			<div class="copy-right animated wow fadeInUp" data-wow-delay=".5s">
-				<p>
-					Copyright &copy; 2016.Company name All rights reserved.<a
-						target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+			<div class="fp-catelistboxr r">
+				<p class="catelistboxr-top fc">
+					<a href="#" class="a1">手机版下载</a> <a href="#" class="a2">免费开商城</a> <a
+						href="#" class="a3">供货商入驻</a> <a href="#" class="a4">开通网批宝</a> <span
+						class="clear "></span>
+				</p>
+				<p class="catelistboxr-bottom">
+					<span><img src="ui/default/images/ad.png" /></span> <span><img
+						src="ui/default/images/ad0-2.png" /></span> <span class="lineBox"></span>
 				</p>
 			</div>
 		</div>
+		<p class="lnpage">
+			<a href="#" class="oncur"> <span class="hoverbg "></span> <span
+				class="hovertext">裘皮装饰</span>
+			</a> <a href="#" class=""> <span class="hoverbg"></span> <span
+				class="hovertext">破春行动</span>
+			</a> <a href="#" class=""> <span class="hoverbg"></span> <span
+				class="hovertext">破行动</span>
+			</a> <a href="#" class=""> <span class="hoverbg"></span> <span
+				class="hovertext">破春行动</span>
+			</a>
+		</p>
 	</div>
-	<!-- //footer -->
+	<div class="category-menu-content">
+		<div class="category-menu-pannel">
+			<div class="category-1 menubox">
+				<div class="category-menu-box" style="background-color: #0b548d;">
+					<div class="category-ad">
+						<a href="#"><img src="ui/default/images/ad2.png" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="category-2 hidden menubox">
+				<div class="category-menu-box" style="background-color: #01aef0;">
+					<div class="category-ad">
+						<a href="#"><img src="ui/default/images/ad2-2.png" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="category-3 hidden menubox">
+				<div class="category-menu-box" style="background-color: #fce9eb;">
+					<div class="category-ad">
+						<a href="#"><img src="ui/default/images/ad2-3.png" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="category-4 hidden menubox">
+				<div class="category-menu-box" style="background-color: #1398d1;">
+					<div class="category-ad">
+						<a href="#"><img src="ui/default/images/ad2-4.png" /></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- banner end -->
+
+<div class="part-brand">
+	<div class="brand-bar">
+		<img src="ui/default/images/bar-brand.png" />
+	</div>
+	<div class="brand-content">
+		<div class="bcl l">
+			<a href="#"><img src="ui/default/images/ad3.png" /></a>
+		</div>
+		<div class="bcc l">
+			<div class="bccBox">
+				<div class="bccBox-ul">
+					<div class="bccBox-li">
+						<div class="bcc-t">
+							<ul class="fc">
+								<li><a href="#"><img src="ui/default/images/logo1.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo2.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo3.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo4.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo5.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo6.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo1.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo2.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo3.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo4.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo5.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo6.png" /></a></li>
+							</ul>
+						</div>
+						<div class="bcc-b">
+							<div class="bcc-b-img l mr5">
+								<img src="ui/default/images/ad4.png" />
+								<p class="bcc-b-info fc">
+									<span class="logo l"><img
+										src="ui/default/images/adlogo.png" /></span> <span class="info l">燃情岁月</span>
+								</p>
+							</div>
+							<div class="bcc-b-img l">
+								<img src="ui/default/images/ad5.png" />
+								<p class="bcc-b-info fc">
+									<span class="logo l"><img
+										src="ui/default/images/adlogo.png" /></span> <span class="info l">燃情岁月</span>
+								</p>
+							</div>
+							<div class="bcc-b-img r">
+								<img src="ui/default/images/ad6.png" />
+								<p class="bcc-b-info fc">
+									<span class="logo l"><img
+										src="ui/default/images/adlogo.png" /></span> <span class="info l">燃情岁月</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+					<div class="bccBox-li">
+						<div class="bcc-t">
+							<ul class="fc">
+								<li><a href="#"><img src="ui/default/images/logo1.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo2.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo3.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo4.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo5.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo6.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo1.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo2.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo3.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo4.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo5.png" /></a></li>
+								<li><a href="#"><img src="ui/default/images/logo6.png" /></a></li>
+							</ul>
+						</div>
+						<div class="bcc-b">
+							<div class="bcc-b-img l mr5">
+								<img src="ui/default/images/ad4.png" />
+								<p class="bcc-b-info fc">
+									<span class="logo l"><img
+										src="ui/default/images/adlogo.png" /></span> <span class="info l">燃情岁月</span>
+								</p>
+							</div>
+							<div class="bcc-b-img l">
+								<img src="ui/default/images/ad5.png" />
+								<p class="bcc-b-info fc">
+									<span class="logo l"><img
+										src="ui/default/images/adlogo.png" /></span> <span class="info l">燃情岁月</span>
+								</p>
+							</div>
+							<div class="bcc-b-img r">
+								<img src="ui/default/images/ad6.png" />
+								<p class="bcc-b-info fc">
+									<span class="logo l"><img
+										src="ui/default/images/adlogo.png" /></span> <span class="info l">燃情岁月</span>
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="bcc-l-r">
+				<a href="javascript:void(0)" class="bccLeft"></a> <a
+					href="javascript:void(0)" class="bccRight"></a>
+			</div>
+		</div>
+		<div class="bcr r">
+			<div class="bcr-tem">
+				<p class="img">
+					<a href="#"><img src="ui/default/images/ad4.png" /><span
+						class="headbg"></span></a>
+
+				</p>
+				<p class="info">
+					<a href="#"><img src="ui/default/images/btnv.png" /></a>
+				</p>
+			</div>
+			<div class="bcr-tem mt1">
+				<p class="img">
+					<a href="#"><img src="ui/default/images/ad5.png" /><span
+						class="headbg"></span></a>
+				</p>
+				<p class="info">
+					<a href="#"><img src="ui/default/images/btnan.png" /></a>
+				</p>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+</div>
+<!-- part1 end -->
+
+
+
+<div class="main">
+	<p class="banner1176 mt10">
+		<a href="#"><img src="ui/default/images/img1176x100.jpg" /></a>
+	</p>
+
+	<div class="prodsbox mt15">
+		<div class="brandtitle tal fc">
+			<span class="in_title l"><img
+				src="ui/default/images/in_title1.png" /></span>
+			<p class="procatebox l f14">
+				<a href="#">时尚女装</a><a href="#">品味男装</a><a href="#">户外运动</a><a
+					href="#">精致内衣</a><a href="#">流行童装</a>
+			</p>
+			<a href="#" class="promore r f_14">更多&gt;</a>
+		</div>
+		<div class="prolistbox mt10">
+			<div class="protlnav l">
+				<div class="protitle">
+					<p class="prnimg">
+						<a href="#"><img src="ui/default/images/img200x335.jpg" /></a>
+					</p>
+					<div class="imgnav fc">
+						<ul>
+							<li class="imgn_c1 imgn_on"><a href="#"><span
+									class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c2"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c3"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c4"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c5"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c6"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="protcname f14 fc">
+					<a href="#">衬衣</a><a href="#">连衣裙</a><a href="#">七分裤</a><a href="#">打底裤</a><a
+						href="#">连衣裙</a><a href="#">七分裤</a>
+				</p>
+			</div>
+			<div class="proimg195 r">
+				<ul class="fc">
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- prodsbox end -->
+
+	<div class="prodsbox mt15">
+		<div class="brandtitle tal fc">
+			<span class="in_title l"><img
+				src="ui/default/images/in_title2.png" /></span>
+			<p class="procatebox l f14">
+				<a href="#">时尚女装</a><a href="#">品味男装</a><a href="#">户外运动</a><a
+					href="#">精致内衣</a><a href="#">流行童装</a>
+			</p>
+			<a href="#" class="promore r f_14">更多&gt;</a>
+		</div>
+		<div class="prolistbox mt10">
+			<div class="protlnav l">
+				<div class="protitle">
+					<p class="prnimg">
+						<a href="#"><img src="ui/default/images/img200x335.jpg" /></a>
+					</p>
+					<div class="imgnav fc">
+						<ul>
+							<li class="imgn_c1 imgn_on"><a href="#"><span
+									class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c2"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c3"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c4"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c5"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c6"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="protcname f14 fc">
+					<a href="#">衬衣</a><a href="#">连衣裙</a><a href="#">七分裤</a><a href="#">打底裤</a><a
+						href="#">连衣裙</a><a href="#">七分裤</a>
+				</p>
+			</div>
+			<div class="proimg195 r">
+				<ul class="fc">
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- prodsbox end -->
+
+	<div class="prodsbox mt15">
+		<div class="brandtitle tal fc">
+			<span class="in_title l"><img
+				src="ui/default/images/in_title3.png" /></span>
+			<p class="procatebox l f14">
+				<a href="#">时尚女装</a><a href="#">品味男装</a><a href="#">户外运动</a><a
+					href="#">精致内衣</a><a href="#">流行童装</a>
+			</p>
+			<a href="#" class="promore r f_14">更多&gt;</a>
+		</div>
+		<div class="prolistbox mt10">
+			<div class="protlnav l">
+				<div class="protitle">
+					<p class="prnimg">
+						<a href="#"><img src="ui/default/images/img200x335.jpg" /></a>
+					</p>
+					<div class="imgnav fc">
+						<ul>
+							<li class="imgn_c1 imgn_on"><a href="#"><span
+									class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c2"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c3"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c4"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c5"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c6"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="protcname f14 fc">
+					<a href="#">衬衣</a><a href="#">连衣裙</a><a href="#">七分裤</a><a href="#">打底裤</a><a
+						href="#">连衣裙</a><a href="#">七分裤</a>
+				</p>
+			</div>
+			<div class="proimg195 r">
+				<ul class="fc">
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- prodsbox end -->
+
+	<p class="banner1176 mt10">
+		<a href="#"><img src="ui/default/images/img1176x100.jpg" /></a>
+	</p>
+
+	<div class="prodsbox mt15">
+		<div class="brandtitle tal fc">
+			<span class="in_title l"><img
+				src="ui/default/images/in_title4.png" /></span>
+			<p class="procatebox l f14">
+				<a href="#">时尚女装</a><a href="#">品味男装</a><a href="#">户外运动</a><a
+					href="#">精致内衣</a><a href="#">流行童装</a>
+			</p>
+			<a href="#" class="promore r f_14">更多&gt;</a>
+		</div>
+		<div class="prolistbox mt10">
+			<div class="protlnav l">
+				<div class="protitle">
+					<p class="prnimg">
+						<a href="#"><img src="ui/default/images/img200x335.jpg" /></a>
+					</p>
+					<div class="imgnav fc">
+						<ul>
+							<li class="imgn_c1 imgn_on"><a href="#"><span
+									class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c2"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c3"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c4"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c5"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c6"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="protcname f14 fc">
+					<a href="#">衬衣</a><a href="#">连衣裙</a><a href="#">七分裤</a><a href="#">打底裤</a><a
+						href="#">连衣裙</a><a href="#">七分裤</a>
+				</p>
+			</div>
+			<div class="proimg195 r">
+				<ul class="fc">
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- prodsbox end -->
+
+	<div class="prodsbox mt15">
+		<div class="brandtitle tal fc">
+			<span class="in_title l"><img
+				src="ui/default/images/in_title5.png" /></span>
+			<p class="procatebox l f14">
+				<a href="#">时尚女装</a><a href="#">品味男装</a><a href="#">户外运动</a><a
+					href="#">精致内衣</a><a href="#">流行童装</a>
+			</p>
+			<a href="#" class="promore r f_14">更多&gt;</a>
+		</div>
+		<div class="prolistbox mt10">
+			<div class="protlnav l">
+				<div class="protitle">
+					<p class="prnimg">
+						<a href="#"><img src="ui/default/images/img200x335.jpg" /></a>
+					</p>
+					<div class="imgnav fc">
+						<ul>
+							<li class="imgn_c1 imgn_on"><a href="#"><span
+									class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c2"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c3"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c4"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c5"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c6"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="protcname f14 fc">
+					<a href="#">衬衣</a><a href="#">连衣裙</a><a href="#">七分裤</a><a href="#">打底裤</a><a
+						href="#">连衣裙</a><a href="#">七分裤</a>
+				</p>
+			</div>
+			<div class="proimg195 r">
+				<ul class="fc">
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- prodsbox end -->
+
+	<div class="prodsbox mt15">
+		<div class="brandtitle tal fc">
+			<span class="in_title l"><img
+				src="ui/default/images/in_title6.png" /></span>
+			<p class="procatebox l f14">
+				<a href="#">时尚女装</a><a href="#">品味男装</a><a href="#">户外运动</a><a
+					href="#">精致内衣</a><a href="#">流行童装</a>
+			</p>
+			<a href="#" class="promore r f_14">更多&gt;</a>
+		</div>
+		<div class="prolistbox mt10">
+			<div class="protlnav l">
+				<div class="protitle">
+					<p class="prnimg">
+						<a href="#"><img src="ui/default/images/img200x335.jpg" /></a>
+					</p>
+					<div class="imgnav fc">
+						<ul>
+							<li class="imgn_c1 imgn_on"><a href="#"><span
+									class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c2"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c3"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c4"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c5"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c6"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="protcname f14 fc">
+					<a href="#">衬衣</a><a href="#">连衣裙</a><a href="#">七分裤</a><a href="#">打底裤</a><a
+						href="#">连衣裙</a><a href="#">七分裤</a>
+				</p>
+			</div>
+			<div class="proimg195 r">
+				<ul class="fc">
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- prodsbox end -->
+
+	<div class="prodsbox mt15">
+		<div class="brandtitle tal fc">
+			<span class="in_title l"><img
+				src="ui/default/images/in_title7.png" /></span>
+			<p class="procatebox l f14">
+				<a href="#">时尚女装</a><a href="#">品味男装</a><a href="#">户外运动</a><a
+					href="#">精致内衣</a><a href="#">流行童装</a>
+			</p>
+			<a href="#" class="promore r f_14">更多&gt;</a>
+		</div>
+		<div class="prolistbox mt10">
+			<div class="protlnav l">
+				<div class="protitle">
+					<p class="prnimg">
+						<a href="#"><img src="ui/default/images/img200x335.jpg" /></a>
+					</p>
+					<div class="imgnav fc">
+						<ul>
+							<li class="imgn_c1 imgn_on"><a href="#"><span
+									class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c2"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c3"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c4"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c5"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c6"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="protcname f14 fc">
+					<a href="#">衬衣</a><a href="#">连衣裙</a><a href="#">七分裤</a><a href="#">打底裤</a><a
+						href="#">连衣裙</a><a href="#">七分裤</a>
+				</p>
+			</div>
+			<div class="proimg195 r">
+				<ul class="fc">
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- prodsbox end -->
+
+	<div class="prodsbox mt15">
+		<div class="brandtitle tal fc">
+			<span class="in_title l"><img
+				src="ui/default/images/in_title8.png" /></span>
+			<p class="procatebox l f14">
+				<a href="#">时尚女装</a><a href="#">品味男装</a><a href="#">户外运动</a><a
+					href="#">精致内衣</a><a href="#">流行童装</a>
+			</p>
+			<a href="#" class="promore r f_14">更多&gt;</a>
+		</div>
+		<div class="prolistbox mt10">
+			<div class="protlnav l">
+				<div class="protitle">
+					<p class="prnimg">
+						<a href="#"><img src="ui/default/images/img200x335.jpg" /></a>
+					</p>
+					<div class="imgnav fc">
+						<ul>
+							<li class="imgn_c1 imgn_on"><a href="#"><span
+									class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c2"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c3"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c4"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c5"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c6"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="protcname f14 fc">
+					<a href="#">衬衣</a><a href="#">连衣裙</a><a href="#">七分裤</a><a href="#">打底裤</a><a
+						href="#">连衣裙</a><a href="#">七分裤</a>
+				</p>
+			</div>
+			<div class="proimg195 r">
+				<ul class="fc">
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- prodsbox end -->
+
+	<div class="prodsbox mt15">
+		<div class="brandtitle tal fc">
+			<span class="in_title l"><img
+				src="ui/default/images/in_title9.png" /></span>
+			<p class="procatebox l f14">
+				<a href="#">时尚女装</a><a href="#">品味男装</a><a href="#">户外运动</a><a
+					href="#">精致内衣</a><a href="#">流行童装</a>
+			</p>
+			<a href="#" class="promore r f_14">更多&gt;</a>
+		</div>
+		<div class="prolistbox mt10">
+			<div class="protlnav l">
+				<div class="protitle">
+					<p class="prnimg">
+						<a href="#"><img src="ui/default/images/img200x335.jpg" /></a>
+					</p>
+					<div class="imgnav fc">
+						<ul>
+							<li class="imgn_c1 imgn_on"><a href="#"><span
+									class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c2"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c3"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c4"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c5"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c6"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="protcname f14 fc">
+					<a href="#">衬衣</a><a href="#">连衣裙</a><a href="#">七分裤</a><a href="#">打底裤</a><a
+						href="#">连衣裙</a><a href="#">七分裤</a>
+				</p>
+			</div>
+			<div class="proimg195 r">
+				<ul class="fc">
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- prodsbox end -->
+
+	<div class="prodsbox mt15">
+		<div class="brandtitle tal fc">
+			<span class="in_title l"><img
+				src="ui/default/images/in_title10.png" /></span>
+			<p class="procatebox l f14">
+				<a href="#">时尚女装</a><a href="#">品味男装</a><a href="#">户外运动</a><a
+					href="#">精致内衣</a><a href="#">流行童装</a>
+			</p>
+			<a href="#" class="promore r f_14">更多&gt;</a>
+		</div>
+		<div class="prolistbox mt10">
+			<div class="protlnav l">
+				<div class="protitle">
+					<p class="prnimg">
+						<a href="#"><img src="ui/default/images/img200x335.jpg" /></a>
+					</p>
+					<div class="imgnav fc">
+						<ul>
+							<li class="imgn_c1 imgn_on"><a href="#"><span
+									class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c2"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c3"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c4"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c5"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+							<li class="imgn_c6"><a href="#"><span class="in_more r">&gt;</span>时尚女装</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="protcname f14 fc">
+					<a href="#">衬衣</a><a href="#">连衣裙</a><a href="#">七分裤</a><a href="#">打底裤</a><a
+						href="#">连衣裙</a><a href="#">七分裤</a>
+				</p>
+			</div>
+			<div class="proimg195 r">
+				<ul class="fc">
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_1.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x142_2.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+					<li><a href="#"><img
+							src="ui/default/images/img195x141.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- prodsbox end -->
+
+	<p class="banner1176 mt10">
+		<a href="#"><img src="ui/default/images/img1176x100.jpg" /></a>
+	</p>
+
+	<div class="leftbox hidden">
+		<p class="lentitle1">手机商城轻松搞定</p>
+		<p class="lentitle2 tac">
+			<a href="#"><img src="ui/default/images/img30x49.jpg" /></a><span>保存到手机</span>
+		</p>
+		<p class="lentitle2 tac">
+			<span><img src="ui/default/images/img50x50.jpg" /></span><span>手机商城</span>
+		</p>
+		<p class="lentitle2 tac">
+			<span><img src="ui/default/images/img50x50.jpg" /></span><span>官方微信</span>
+		</p>
+		<p>
+			<a href="#"><img src="ui/default/images/img71x60.png" /></a>
+		</p>
+	</div>
+	<!-- leftbox end -->
+
+	<div class="rightbox hidden">
+		<p class="rnavlist">
+			<a href="#"><span class="rn_letter">1F</span><span
+				class="rn_chine">服饰内衣</span></a> <a href="#"><span class="rn_letter">2F</span><span
+				class="rn_chine">鞋帽箱包</span></a> <a href="#"><span class="rn_letter">3F</span><span
+				class="rn_chine">护肤美妆</span></a> <a href="#"><span class="rn_letter">4F</span><span
+				class="rn_chine">美食特产</span></a> <a href="#"><span class="rn_letter">5F</span><span
+				class="rn_chine">珠宝饰品</span></a> <a href="#"><span class="rn_letter">6F</span><span
+				class="rn_chine">家纺家饰</span></a> <a href="#"><span class="rn_letter">7F</span><span
+				class="rn_chine">日用百货</span></a> <a href="#"><span class="rn_letter">8F</span><span
+				class="rn_chine">手机数码</span></a> <a href="#"><span class="rn_letter">9F</span><span
+				class="rn_chine">家用电器</span></a> <a href="#"><span class="rn_letter">10F</span><span
+				class="rn_chine">电脑办公</span></a>
+		</p>
+		<p class="clear"></p>
+		<a href="#" class="rn_gtop"></a>
+	</div>
+	<!-- rightbox end -->
+
+	<p class="bg_onshare hidden">
+		<a href="#"></a>
+	</p>
+</div>
+<!-- main end -->
+
+<div class="helpbox">
+	<div class="helptext1 l">
+		<p class="he_icon1 l"></p>
+		<div class="he_text1 r tal">
+			<p class="ht_ttitle">新手帮助</p>
+			<p class="ht_txt mt5">
+				<a href="#">免费注册</a>
+			</p>
+			<p class="ht_txt">
+				<a href="#">常见问题</a>
+			</p>
+			<p class="ht_txt">
+				<a href="#">帮助中心</a>
+			</p>
+			<p class="ht_txt">
+				<a href="#">如何付款</a>
+			</p>
+		</div>
+	</div>
+	<div class="helptext2 l">
+		<p class="he_icon2 l"></p>
+		<div class="he_text2 r tal">
+			<p class="ht_ttitle">维权保障</p>
+			<p class="ht_txt mt5">
+				<a href="#">买家投诉</a>
+			</p>
+			<p class="ht_txt">
+				<a href="#">权益保障</a>
+			</p>
+			<p class="ht_txt">
+				<a href="#">退货退款流程</a>
+			</p>
+			<p class="ht_txt">
+				<a href="#">提供发票</a>
+			</p>
+			<p class="ht_txt">
+				<a href="#">快速物流</a>
+			</p>
+		</div>
+	</div>
+	<p class="h_logo l">
+		<a href="#"><img src="ui/default/images/logo.png" /></a>
+	</p>
+	<div class="helptext3 l">
+		<p class="he_icon3 l"></p>
+		<div class="he_text1 r tal">
+			<p class="ht_ttitle">商家服务</p>
+			<p class="ht_txt mt5">
+				<a href="#">商家入驻</a>
+			</p>
+			<p class="ht_txt">
+				<a href="#">供货商中心</a>
+			</p>
+			<p class="ht_txt">
+				<a href="#">商家成长</a>
+			</p>
+		</div>
+	</div>
+	<div class="helptext4 l">
+		<p class="he_icon4 l"></p>
+		<div class="he_text4 r tal">
+			<p class="ht_ttitle">加盟管理</p>
+			<p class="ht_txt mt5">
+				<a href="#">加盟必读</a>
+			</p>
+			<p class="ht_txt">
+				<a href="#">供货商加盟</a>
+			</p>
+			<p class="ht_txt">
+				<a href="#">采购商加盟</a>
+			</p>
+			<p class="ht_txt">
+				<a href="#">服务商加盟</a>
+			</p>
+			<p class="ht_txt">
+				<a href="#">合作商加盟</a>
+			</p>
+		</div>
+	</div>
+	<p class="clear"></p>
+</div>
+<!-- helpbox end -->
+
+<div class="footer">
+	<p class="ft_title">
+		<a href="#">关于我们</a>|<a href="#">联系我们</a>|<a href="#">技术支持</a>|<a
+			href="#">免责声明</a>|<a href="#">合作伙伴</a>|<a href="#">诚聘英才</a>
+	</p>
+	<p class="ft_comyt mt10">Copyright 2012-2013 wpwzg.cn All Rights
+		Reserved.</p>
+	<p class="ft_comyt mt10">
+		<a href="#">杭州网批网科技有限公司 浙ICP备12018265号-1</a>
+		|&nbsp;&nbsp;&nbsp;增值电信业务经营许可证号码 [浙B2-20130129].
+	</p>
+</div>
+<!-- footer end -->
+
+
+<div class="wsloginbox fc">
+	<div class="wsl_close fc">
+		<a href="#" class="r"></a>
+	</div>
+	<div class="wsl_typebox fc">
+		<p class="ws_itype4 fc">
+			<a href="#"></a><br />
+			<span>微批商城店名登录</span>
+		</p>
+		<p class="ws_itype3 fc">
+			<a href="#"></a><br />
+			<span>网批网账号登录</span>
+		</p>
+		<p class="ws_itype1 fc">
+			<a href="#"></a><br />
+			<span>用QQ账号登录</span>
+		</p>
+		<p class="ws_itype2 fc">
+			<a href="#"></a><br />
+			<span>用新浪账号登录</span>
+		</p>
+	</div>
+</div>
+<div id="shade" class="hidden"></div>
+<!-- wsloginbox end -->
+
+<div class="nprompt_box">
+	<p class="nprompt_p1 ffa c333">开通网批商城</p>
+	<div class="nprompt_bgp">
+		<p class="ffa f_14 c333 nprompt_p2">请设置您的网批商城店名</p>
+		<p class="nprompt_p3">
+			<input name="" type="text" />
+		</p>
+		<p class="nprompt_p4">
+			<input name="" type="submit" value="" />
+		</p>
+	</div>
+</div>
+<!-- nprompt_box -->
+
+<p class="appnew ffa f_16 tal">
+	<a href="#">新版APP全新发布</a>
+</p>
+
+<div class="add_tcbig">
+	<p class="pclose fc">
+		<a href="#" class="r"></a>
+	</p>
+	<p class="item_title2"></p>
+	<p class="big_left l">
+		<a href="#" class="mb22"></a> <a href="#"></a>
+	</p>
+	<div class="big_right l">
+		<p class="brimg">
+			<img src="ui/default/images/ewm_big.png" />
+		</p>
+		<span>手机扫描快速下载</span>
+	</div>
+	<p class="clear"></p>
+</div>
+<!-- add_tcbig end -->
+
+<div class="add_tcright e12d2d_bg">
+	<p class="pclose fc">
+		<a href="#" class="r"></a>
+	</p>
+	<p class="item_title"></p>
+	<div class="pdown fc">
+		<p class="down_left l">
+			<a href="#" class="mb9"></a> <a href="#" class=""></a>
+		</p>
+		<div class="down_right l">
+			<p class="drimg">
+				<img src="ui/default/images/ewm_small.png" />
+			</p>
+			<span>手机扫描快速下载</span>
+		</div>
+	</div>
+	<p class="pclose1">
+		<input type="checkbox" name="checkbox" id="checkbox" /> <label
+			for="checkbox">不再弹出</label>
+	</p>
+</div>
+<!-- add_tcright end -->
+
+<SCRIPT type="text/javascript">
+	TB.Header.init();
+</SCRIPT>
+
+
 </body>
 </html>
