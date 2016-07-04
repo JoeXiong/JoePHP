@@ -12,12 +12,19 @@ class DBMysql extends PDO
 {
 
     private $db_config; // 数据库配置
+
     private $lastsql = ''; // 最后一次执行的sql语句
+
     private $pre_data = array(); // 预编译参数
+
     private $fetch_type = PDO::FETCH_ASSOC; // 查询语句返回的数据集类型
+
     private $sql_stmt = ''; // 组装的sql语句
+
     private $query_type = ''; // 当前正在执行语句类型
+
     private $error_info = null; // 错误信息
+
     private $log_path = './sql-error.log'; // 日志存储路径
 
     /**
@@ -61,6 +68,7 @@ class DBMysql extends PDO
         $this->lastsql = $sql;
         $this->pre_data = $data;
         $stmt = $this->prepare($sql);
+//         funcPunlic::show_bug($stmt);
         $stmt->execute($data) ? true : $this->error_info = $stmt->errorInfo();
         return $stmt;
     }
@@ -300,8 +308,7 @@ class DBMysql extends PDO
             case 'update':
                 $this->sql_stmt = str_replace('$set$', '', $this->sql_stmt);
                 $this->sql_stmt = str_replace('$where$', ' WHERE 1=2', $this->sql_stmt);
-                $r = $this->queryObj($this->sql_stmt, $data)->errorInfo();
-                return isset($r[2]) ? false : true;
+                return $this->querySql($this->sql_stmt, $data);
                 break;
             
             default:
@@ -309,74 +316,80 @@ class DBMysql extends PDO
         }
     }
     
-    //链式操作的一些方法
-    //field(),where(),order(),group(),limit(),setdata()
-    public function __call($name, $args){
-    
-        switch (strtoupper($name)){
+    // 链式操作的一些方法
+    // field(),where(),order(),group(),limit(),setdata()
+    public function __call($name, $args)
+    {
+        switch (strtoupper($name)) {
             case 'FIELD':
-                $field = !empty($args[0]) ? $args[0] : '*';
+                $field = ! empty($args[0]) ? $args[0] : '*';
                 $this->sql_stmt = str_replace('$field$', $field, $this->sql_stmt);
                 break;
             case 'WHERE':
-                $where = !empty($args[0]) ? ' WHERE '.$args[0] : '';
+                $where = ! empty($args[0]) ? ' WHERE ' . $args[0] : '';
                 $this->sql_stmt = str_replace('$where$', $where, $this->sql_stmt);
                 break;
             case 'ORDER':
-                $order = !empty($args[0]) ? ' ORDER BY '.$args[0].' $other$' : '$other$';
+                $order = ! empty($args[0]) ? ' ORDER BY ' . $args[0] . ' $other$' : '$other$';
                 $this->sql_stmt = str_replace('$other$', $order, $this->sql_stmt);
                 break;
             case 'GROUP':
-                $group = !empty($args[0]) ? ' GROUP BY '.$args[0].' $other$' : '$other$';
+                $group = ! empty($args[0]) ? ' GROUP BY ' . $args[0] . ' $other$' : '$other$';
                 $this->sql_stmt = str_replace('$other$', $group, $this->sql_stmt);
                 break;
             case 'LIMIT':
-                $limit = !empty($args) ? ' $other$ LIMIT '.implode(',', $args) : '$other$';
+                $limit = ! empty($args) ? ' $other$ LIMIT ' . implode(',', $args) : '$other$';
                 $this->sql_stmt = str_replace('$other$', $limit, $this->sql_stmt);
                 break;
             case 'SETDATA':
-                $set = !empty($args[0]) ? ' SET '.$args[0] : '';
+                $set = ! empty($args[0]) ? ' SET ' . $args[0] : '';
                 $this->sql_stmt = str_replace('$set$', $set, $this->sql_stmt);
                 break;
         }
         return $this;
     }
-    
+
     /**
      * 获取正在执行的sql语句
-     * @param bool $real_query_string 是否返回真实执行的sql语句,默认是
+     * 
+     * @param bool $real_query_string
+     *            是否返回真实执行的sql语句,默认是
      * @return string
      */
-    public function getLastSql($real_query_string = true){
+    public function getLastSql($real_query_string = true)
+    {
         return $real_query_string ? $this->realQuery($this->lastsql, $this->pre_data) : $this->lastsql;
     }
     
-    //获取真实执行的查询语句
-    private function realQuery($q, $r){
+    // 获取真实执行的查询语句
+    private function realQuery($q, $r)
+    {
         $i = 0;
-        $ret = preg_replace_callback('/:([0-9a-z_]+)|\?+/i', function($m)use($r,&$i){
+        $ret = preg_replace_callback('/:([0-9a-z_]+)|\?+/i', function ($m) use($r, &$i)
+        {
             $k = array_keys($r);
             $v = $m[0] == '?' ? $r[$i] : (substr($k[$i], 0, 1) == ':' ? $r[$m[0]] : $r[$m[1]]);
             if ($v === null) {
                 return "NULL";
             }
-            if (!is_numeric($v)) {
+            if (! is_numeric($v)) {
                 $v = "'{$v}'";
             }
-            $i++;
+            $i ++;
             return $v;
         }, $q);
         return $ret;
     }
     
-    //记录日志
-    private function log(){
+    // 记录日志
+    private function log()
+    {
         try {
-            $log = "[".date('Y-m-d H:i:s')."]\n";
-            $log .= '执行语句：'.$this->getLastSql()."\n";
-            $log .= '错误代码：'.$this->error_info[0]."\n";
-            $log .= '错误类型：'.$this->error_info[1]."\n";
-            $log .= '错误描述：'.$this->error_info[2]."\n\n";
+            $log = "[" . date('Y-m-d H:i:s') . "]\n";
+            $log .= '执行语句：' . $this->getLastSql() . "\n";
+            $log .= '错误代码：' . $this->error_info[0] . "\n";
+            $log .= '错误类型：' . $this->error_info[1] . "\n";
+            $log .= '错误描述：' . $this->error_info[2] . "\n\n";
             file_put_contents($this->log_path, $log, FILE_APPEND);
             return '';
         } catch (Exception $e) {

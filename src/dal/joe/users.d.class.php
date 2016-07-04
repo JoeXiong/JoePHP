@@ -164,7 +164,7 @@ class usersDal extends datamodel
      * @param usersDmodel $users            
      * @param unknown $where            
      */
-    public function usersWhereUpdate(usersDmodel $users, $where = array('UserId' => 0))
+    public function usersWhereUpdate(usersDmodel $users, $where = array('1' => 2))
     {
         try {
             if (! $users instanceof usersDmodel)

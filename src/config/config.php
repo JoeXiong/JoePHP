@@ -13,6 +13,7 @@ define("_COOKIE_DOMAIN_", ".joeshop.cn"); // Cookie 作用域
                                          
 // 数据表前缀
 define('_DB_PRE_', "joe_");             
+
                     
 // 数据库配置参数
 global $db_config;
